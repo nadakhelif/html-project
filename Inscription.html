@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+
+    <body style="text-align: center;">
+        <h1>Inscription en licence</h1>
+        <form action="video.html" method="post" name="Informations personnelles" >
+            <fieldset>
+                <legend>Informations personnelles</legend>
+            <label for="nom">Votre nom:</label><input type="text" name="nom" size="15" maxlength="30"  value="votre nom?"><br><br>
+            <label for="prenom">Votre prenom:</label><input type="text" name="prenom" size="15" maxlength="30" value="votre prenom?"><br><br>
+            <label for="age">Votre age:</label><input type="number" name="age" size="10" maxlength="15" value="votre age ?"><br><br>
+            <label for="adresse">Votre adresse:</label><textarea name="adresse" rows="10" cols="45">votre adresse ?</textarea><br><br>
+            <label for="passwd"> Mot de passe: </label><INPUT TYPE ="password" NAME="passwd" ID ="passwd" SIZE=15 MAXLENGTH=30 required><br><br>
+            <label for="passwd"> Repeter votre mot de passe: </label> :<INPUT TYPE ="password" NAME="passwd" ID ="rpasswd" SIZE=15 MAXLENGTH=30><br><br>
+            <label for="homepage">Entrer votre URL:</label><input type="url" id="homepage" name="homepage"><br><br>
+            <label for="email">Entrer votre email:</label><input type="email" id="email" name="email"><br><br>
+            <label for="date">Entrer votre date de naissance:</label><input type="date" id="date" name="date"><br><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Gestion des groupes et des options</legend>
+                Votre groupe:<input type="radio" id="Groupe 1" name="groupe" value="Groupe 1">
+                  <label for="Groupe 1">Groupe 1</label>
+                  <input type="radio" id="groupe 2" name="groupe" value="Groupe 2">
+                  <label for="groupe 2">Groupe 2</label>
+                  <input type="radio" id="groupe 3" name="groupe" value="Groupe 3">
+                  <label for="groupe 3">Groupe 3</label><br><br>
+                <label for="num">Numero Carte etudiant:</label><input type="text" name="num" size="30" maxlength="50"  value="Numero de carte d'etudiant?"><br><br>
+                <br><br><br><br><label for="Options">Choisir les options que vous desiriez:</label>
+                <select id="Options" name="Options">
+                    <option ></option>
+                  <option value="j2ee">J2ee</option>
+                  <option value="Android">Android</option>
+                  <option value=".Net">.Net</option>
+                  <option value="HTML5">HTML5</option>
+                  <option value="Flex">Flex</option>
+                </select>
+               
+            </fieldset>
+            <input type="text" size="20" max="35" pattern=" [I][N][S][A][T][0-9]{4} "><br><br>
+            <input type="submit" value="Valider" >
+            <input type="reset" value="reinisialiser">
+            
+
+        </form>
+    </body>
+
+</html>
